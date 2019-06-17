@@ -1,4 +1,10 @@
 <div style="text-align:center">
   <h2>Page 2</h2>
-    <p>This is the text of Page 2 Lorem Ipsum</p>
+  <p>Sur cette page, j'ai fais appel à une API simple créé par un collègue de promo pour une Webradio composé d'un id et d'une url.</p>
+  <button class="btn btn-primary"
+  (click)="onFetch()">Afficher les liens</button>
+  <li *ngFor="let data of datas">
+    <p>{{ data.id }}</p>
+    <p>{{ data.url }}</p>
+  </li>
 </div>
