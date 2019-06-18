@@ -12,7 +12,7 @@ export class Page1Component implements OnInit {
 
   appareils: any[];
 
-  lastUpdate = new Promise((resolve, reject) => {
+  Update = new Promise((resolve, reject) => {
     const date = new Date();
     setTimeout(
       () => {
